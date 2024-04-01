@@ -136,6 +136,14 @@
     padding-right: 12px;
 }
 
+.sol_cont {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
 .fm_sans_racing {
     font-family: var(--fm-sans-racing);
 }
@@ -722,6 +730,14 @@ a {
 
 .slick-list {
     overflow: visible;
+}
+
+.max_w_lorem {
+    max-width: 474px;
+}
+
+.pt_120px {
+    padding-top: 120px;
 }
 
 .slick-slide:not(.slick-current) {
