@@ -22,6 +22,7 @@
     --btn-lg: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
     --line-color: #0389FF;
     --text-col-clr: #FBFDFF;
+    --primary-color: #020D15;
     /* font-family */
     --fm-poppins: "Poppins", sans-serif;
     --fm-sans-racing: "Racing Sans One", sans-serif;
@@ -143,8 +144,16 @@
     font-family: var(--fm-imbue);
 }
 
+.primary_color {
+    background: var(--primary-color);
+}
+
 .fm {
     font-family: var(--fm-plus-sans);
+}
+
+.-mt_20px {
+    margin-top: -20px;
 }
 
 .font-style {
@@ -431,6 +440,13 @@
     line-height: var(--lh-83);
 }
 
+.back_img {
+    background-image: url(../image/png/slider_back_image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .lh-100 {
     line-height: var(--lh-100);
 }
@@ -513,6 +529,41 @@ a {
     padding-right: 32px;
 }
 
+.pt_13px {
+    padding-top: 13px;
+}
+
+.line_color {
+    color: var(--line-color);
+}
+
+.line_back_color {
+    background: var(--line-color);
+}
+
+.ellipse_pos_1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0, -50%);
+}
+
+.ellipse_pos_2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 50%);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+.mt_177px {
+    margin-top: 177px;
+}
+
 .nav_items {
     position: relative;
     transition: all 400ms linear;
@@ -520,6 +571,7 @@ a {
 
 .nav_items:hover {
     opacity: 1 !important;
+    -webkit-text-stroke: thin;
 }
 
 .nav_items::after,
@@ -558,6 +610,48 @@ a {
     background: var(--line-color);
 }
 
+.content_box {
+    max-width: 531px;
+    min-height: 135px;
+    border-radius: 10px;
+    background: #0389FF1F;
+    backdrop-filter: blur(5px);
+}
+
+.svg_contain_box {
+    max-width: 64px;
+    min-height: 64px;
+    padding: 16px;
+    border-radius: 8px;
+    background: #0389FF1A;
+    backdrop-filter: blur(5px);
+}
+
+.value_box {
+    max-width: 400px;
+    min-height: 80px;
+    padding: 0px 16px 0px 16px;
+    border-radius: 10px;
+    background: #0389FF1F;
+}
+
+.svg_value_box {
+    max-width: 51.02px;
+    min-height: 52.26px;
+    border-radius: 26.13px;
+    background: #0389FF1F;
+    padding: 13.69px;
+}
+
+.content_box_items {
+    max-width: 531px;
+    min-height: 69px;
+    padding: 22.54px;
+    border-radius: 10px;
+    background: #0389FF1F;
+    backdrop-filter: blur(5px);
+}
+
 .mt_28px {
     margin-top: 28px;
 }
@@ -579,6 +673,23 @@ a {
     min-height: 553.11px;
 }
 
+.dashboard {
+    box-shadow: 0px 10px 100px 0px #000000CC;
+}
+
+.svg_w_h {
+    width: 64px;
+    height: 64px;
+    background: #0389FF1A;
+    border-radius: 14px;
+}
+
+.back_drop {
+    backdrop-filter: blur(10px);
+    background: #0389FF1A;
+    border-radius: 12px;
+}
+
 .ellipse_pos {
     top: 50%;
     left: -50%;
@@ -597,7 +708,80 @@ a {
     }
 }
 
+@media (min-width: 1024px) {
+    .pos_adjustment {
+        position: absolute;
+        bottom: -130px;
+        left: -98px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pos_img_box_3 {
+        bottom: 74px;
+        left: -136px;
+    }
+
+    .pos_img_box_1 {
+        bottom: 280px;
+        left: -84px;
+    }
+
+    .pos_img_box_2 {
+        bottom: 179px;
+        right: -84px;
+    }
+
+    .pos_img_box_4 {
+        bottom: -41px;
+        right: 108px;
+    }
+
+    .d_min_none {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1024.9px) {
+    .pos_img_box_3 {
+        bottom: 74px;
+        left: -15px;
+    }
+
+    .pos_img_box_1 {
+        bottom: 280px;
+        left: -15px;
+    }
+
+    .pos_img_box_4 {
+        bottom: -41px;
+        right: 108px;
+    }
+
+    .pos_img_box_2 {
+        bottom: 179px;
+        right: -15px;
+    }
+
+    .d_min_none {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
+    .max_lg_none {
+        display: none;
+    }
+
+    .pos_img_box_1,
+    .pos_img_box_2,
+    .pos_img_box_4,
+    .pos_img_box_3 {
+        display: none !important;
+    }
+
     .box_2 {
         max-width: 515px;
     }
@@ -607,7 +791,13 @@ a {
         align-items: center;
         justify-content: center;
     }
+
+    .skyblue_ellipse_img {
+        display: none;
+    }
+
 }
+
 
 @media (max-width:992px) {
     .menuicon {
@@ -653,6 +843,57 @@ a {
     }
 }
 
+@media (max-width: 992px) and (min-width: 576px) {
+    .content_box {
+        width: 531px;
+        min-height: 135px;
+        border-radius: 10px;
+        background: #0389FF1F;
+        backdrop-filter: blur(5px);
+    }
+
+    .svg_contain_box {
+        width: 64px;
+        min-height: 64px;
+        padding: 16px;
+        border-radius: 8px;
+        background: #0389FF1A;
+        backdrop-filter: blur(5px);
+    }
+
+    .value_box {
+        width: 400px;
+        min-height: 80px;
+        padding: 0px 16px 0px 16px;
+        border-radius: 10px;
+        background: #0389FF1F;
+    }
+
+    .svg_value_box {
+        width: 51.02px;
+        min-height: 52.26px;
+        border-radius: 26.13px;
+        background: #0389FF1F;
+        padding: 13.69px;
+    }
+
+    .content_box_items {
+        width: 531px;
+        min-height: 69px;
+        padding: 22.54px;
+        border-radius: 10px;
+        background: #0389FF1F;
+        backdrop-filter: blur(5px);
+    }
+
+    .flex_prop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 576px) {
     .fs_sm_max_lh_lg_txt {
         font-size: var(--fs-28);
@@ -675,5 +916,47 @@ a {
 
     .container_hero {
         padding: 0;
+    }
+
+    .content_box {
+        max-width: 1140px;
+        min-height: 135px;
+        border-radius: 10px;
+        background: #0389FF1F;
+        backdrop-filter: blur(5px);
+    }
+
+    .svg_contain_box {
+        max-width: 1140px;
+        min-height: 64px;
+        padding: 16px;
+        border-radius: 8px;
+        background: #0389FF1A;
+        backdrop-filter: blur(5px);
+    }
+
+    .value_box {
+        max-width: 1140px;
+        min-height: 80px;
+        padding: 0px 16px 0px 16px;
+        border-radius: 10px;
+        background: #0389FF1F;
+    }
+
+    .svg_value_box {
+        max-width: 1140px;
+        min-height: 52.26px;
+        border-radius: 26.13px;
+        padding: 13.69px;
+        background: #0389FF1F;
+    }
+
+    .content_box_items {
+        max-width: 1140px;
+        min-height: 69px;
+        padding: 22.54px;
+        border-radius: 10px;
+        background: #0389FF1F;
+        backdrop-filter: blur(5px);
     }
 }
