@@ -21,6 +21,7 @@
     --primary-rgb-color: rgba(251, 253, 255, 0.01);
     --btn-lg: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58) -14.36%, #0069E3 113.71%);
     --line-color: #0389FF;
+    --footer-color: #021728;
     --text-col-clr: #FBFDFF;
     --primary-color: #020D15;
     /* font-family */
@@ -745,6 +746,44 @@ a {
     min-height: 553.11px;
 }
 
+.text_max_w {
+    max-width: 617.84px;
+    min-height: 54px;
+}
+
+.bottom_layer_pos {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.layer_pos {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.pt_110px {
+    padding-top: 110px;
+}
+
+.pb_110px {
+    padding-bottom: 110px;
+}
+
+.input {
+    border: none;
+    outline: none;
+}
+
+.border_rad {
+    border-radius: 40px;
+    background: var(--btn-lg);
+    border: none;
+}
+
 .dashboard {
     box-shadow: 0px 10px 100px 0px #000000CC;
 }
@@ -788,6 +827,16 @@ a {
 
 .slick-list {
     overflow: visible;
+}
+
+.sign_up {
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 32px 0px rgba(39, 70, 237, 0.5);
+}
+
+.sign_up:hover {
+    background: transparent;
+    border: 1px solid var(--color-white);
 }
 
 /* for Accordion */
@@ -857,6 +906,48 @@ a {
     top: 50%;
     left: -50%;
     transform: translate(20%, -50%);
+}
+
+.back_clr_footer {
+    background: var(--footer-color);
+}
+
+.pt_100px {
+    padding-top: 100px;
+}
+
+.max_w_text_footer {
+    max-width: 225.82px;
+    min-height: 42px;
+}
+
+.mt_36px {
+    margin-top: 36px;
+}
+
+.pt_10px {
+    padding-top: 10px;
+}
+
+.svg_footer_box {
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 50%;
+}
+
+.pt_174px {
+    padding-top: 174px;
+}
+
+.line_bottom {
+    width: 100%;
+    height: 2px;
+    background: rgba(251, 253, 255, 0.2);
 }
 
 @media (min-width: 1400px) {
@@ -1009,10 +1100,23 @@ a {
         background: var(--line-color);
         color: var(--text-col-clr);
         box-shadow: 0px 4px 32px 0px rgba(39, 70, 237, 0.5);
+        border: 1px solid transparent;
     }
 
     .hover_effect:hover .dollar_text {
         color: var(--line-color);
+    }
+
+    .input_box {
+        width: 520px;
+        min-height: 55px;
+        padding: 1px 0px 1px 33.71px;
+        border-radius: 29px;
+        background: rgba(251, 253, 255, 0.07);
+    }
+
+    .input {
+        width: 65%;
     }
 }
 
@@ -1071,6 +1175,13 @@ a {
         flex-direction: column;
     }
 
+    .ellipse_image_pos {
+        display: none;
+    }
+
+    .h_236px {
+        height: 236px;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 576px) {
@@ -1123,6 +1234,18 @@ a {
         align-items: center;
         justify-content: center;
     }
+
+    .input_box {
+        width: 520px;
+        min-height: 55px;
+        padding: 1px 0px 1px 33.71px;
+        border-radius: 29px;
+        background: rgba(251, 253, 255, 0.07);
+    }
+
+    .input {
+        width: 65%;
+    }
 }
 
 @media (max-width: 991.9px) and (min-width: 768px) {
@@ -1143,6 +1266,15 @@ a {
         background: rgba(251, 253, 255, 0.15);
         right: 50%;
         transform: translateX(-50%);
+    }
+
+    .flex_dir_lg {
+        flex-direction: column;
+    }
+
+    .px_12px {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 }
 
@@ -1175,6 +1307,17 @@ a {
         top: 100%;
         transform: translateX(-50%);
         left: 50%;
+    }
+
+    .px_12px {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .col_12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
@@ -1211,6 +1354,15 @@ a {
         padding: 22.54px;
     }
 
+    .input {
+        width: 100%;
+    }
+
+    .px_12px {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
     .svg_contain_box {
         max-width: 1140px;
         min-height: 64px;
@@ -1226,6 +1378,14 @@ a {
         padding: 0px 16px 0px 16px;
         border-radius: 10px;
         background: #0389FF1F;
+    }
+
+    .input_box {
+        max-width: 520px !important;
+        min-height: 55px;
+        padding: 1px 0px 1px 10px;
+        border-radius: 29px;
+        background: rgba(251, 253, 255, 0.07);
     }
 
     .svg_value_box {
@@ -1248,5 +1408,15 @@ a {
     .prop_text {
         width: 320px;
         min-height: 25px;
+    }
+
+    .col_12 {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .text_sm_wrap {
+        text-wrap: wrap !important;
     }
 }
