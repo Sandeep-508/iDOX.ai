@@ -539,12 +539,54 @@ a {
     padding-top: 13px;
 }
 
+.box_shadow_phone {
+    box-shadow: -22px 20px 41px 0px #00000080;
+}
+
 .line_color {
     color: var(--line-color);
 }
 
+.pt_207px {
+    padding-top: 207px;
+}
+
+.select_btn {
+    border: 1px solid #FBFDFF;
+    border-radius: 40px;
+}
+
+.pb_56px {
+    padding-bottom: 56px;
+}
+
+.ps_44px {
+    padding-left: 44px;
+}
+
+.svg_tick_box {
+    width: 20.63px;
+    height: 20.63px;
+    border-radius: 53.12px;
+    background: #0389FF1A;
+}
+
 .line_back_color {
     background: var(--line-color);
+}
+
+.center_ellipse_pos_2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center_ellipse_pos {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
 }
 
 .ellipse_pos_1 {
@@ -631,10 +673,15 @@ a {
 
 .content_box {
     max-width: 531px;
-    min-height: 135px;
+    min-height: 69px;
     border-radius: 10px;
     background: #0389FF1F;
     backdrop-filter: blur(5px);
+    padding: 22.54px;
+}
+
+.disp_text {
+    display: none;
 }
 
 .svg_contain_box {
@@ -724,6 +771,11 @@ a {
     margin: 0 -10px;
 }
 
+.flex_some_prop {
+    display: flex;
+    align-items: center;
+}
+
 .slick-list {
     padding: 0 20% 0 20% !important;
 }
@@ -731,6 +783,16 @@ a {
 .slick-list {
     overflow: visible;
 }
+
+/* for Accordion */
+.d_none {
+    display: none;
+}
+
+.accord_flex_prop {
+    display: none;
+}
+
 
 .max_w_lorem {
     max-width: 474px;
@@ -941,10 +1003,11 @@ a {
 @media (max-width: 992px) and (min-width: 576px) {
     .content_box {
         width: 531px;
-        min-height: 135px;
+        min-height: 69px;
         border-radius: 10px;
         background: #0389FF1F;
         backdrop-filter: blur(5px);
+        padding: 22.54px;
     }
 
     .svg_contain_box {
@@ -1015,10 +1078,11 @@ a {
 
     .content_box {
         max-width: 1140px;
-        min-height: 135px;
+        min-height: 69px;
         border-radius: 10px;
         background: #0389FF1F;
         backdrop-filter: blur(5px);
+        padding: 22.54px;
     }
 
     .svg_contain_box {
