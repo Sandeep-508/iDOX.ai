@@ -54,6 +54,7 @@
     --fs-18: 18px;
     --fs-20: 20px;
     --fs-21: 21px;
+    --fs-23: 23px;
     --fs-24: 24px;
     --fs-25: 25px;
     --fs-28: 28px;
@@ -199,6 +200,10 @@
 
 .fs-10 {
     font-size: var(--fs-10);
+}
+
+.fs-23 {
+    font-size: var(--fs-23);
 }
 
 .fs-16 {
@@ -450,8 +455,7 @@
 }
 
 .back_img {
-    position: absolute;
-
+    background: rgb(0 7 12);
 }
 
 .lh-100 {
@@ -760,11 +764,6 @@ a {
     padding-top: 33px;
 }
 
-.w_h_changes_dash_img {
-    max-width: 985.5px;
-    min-height: 553.11px;
-}
-
 .text_max_w {
     max-width: 617.84px;
     min-height: 54px;
@@ -837,7 +836,8 @@ a {
 
 .flex_some_prop {
     display: flex;
-    align-items: center;
+    align-items: start;
+    /* justify-content: center; */
 }
 
 .sign_up {
@@ -967,6 +967,10 @@ a {
 .max_W_text {
     max-width: 474.98px;
     min-height: 81px;
+}
+
+.click_btn {
+    cursor: pointer;
 }
 
 @media (min-width: 1400px) {
@@ -1181,9 +1185,14 @@ a {
     .slick-slide:not(.slick-current) {
         opacity: 0.4;
     }
+
+    .w_h_changes_dash_img {
+        max-width: 985.5px;
+        min-height: 553.11px;
+    }
 }
 
-@media (max-width:992px) {
+@media (max-width:991.9px) {
     .menuicon {
         width: 30px;
         height: 30px;
@@ -1258,9 +1267,13 @@ a {
         font-size: var(--fs-14);
         line-height: var(--lh-24);
     }
+
+    .flex_col_rev {
+        flex-direction: column-reverse;
+    }
 }
 
-@media (max-width: 992px) and (min-width: 576px) {
+@media (max-width: 991.9px) and (min-width: 576px) {
     .content_box {
         width: 531px;
         min-height: 69px;
@@ -1432,9 +1445,26 @@ a {
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    .fs_lh_md_change_heaading {
+        font-size: var(--fs-30);
+        line-height: var(--lh-38);
+    }
+
+    .pt_50px {
+        padding-top: 50px;
+    }
+
+    .pb_50px {
+        padding-bottom: 50px;
+    }
+
+    .mt_50px {
+        margin-top: 50px;
+    }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.9px) {
     .fs_sm_max_lh_lg_txt {
         font-size: var(--fs-28);
         line-height: var(--lh-35);
@@ -1535,5 +1565,10 @@ a {
 
     .int_hor_line_2 {
         display: none;
+    }
+
+    .fs_lh_md_change_heaading {
+        font-size: var(--fs-23);
+        line-height: var(--lh-32);
     }
 }
