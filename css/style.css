@@ -469,7 +469,7 @@
     transition: all 400ms linear;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(45deg, #000000, #ffffff);
+    background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58), #d5dbe3);
     animation: 2s footer_animation infinite;
 }
 
@@ -479,7 +479,7 @@
 
 .footer_link:hover {
     animation: 3s footer_animation infinite;
-    background: linear-gradient(89.2deg, rgb(251, 230, 150) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+    background: linear-gradient(159.94deg, rgba(0, 136, 255, 0.58), #d5dbe3);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -489,6 +489,25 @@
     to {
         background-position: 20vw;
     }
+}
+
+.svg_footer_box:hover svg {
+    animation: svg_animation 2s infinite;
+}
+
+.svg_footer_box:hover svg path {
+    fill: var(--line-color);
+}
+
+@keyframes svg_animation {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.svg_footer_box:hover {
+    background: var(--color-white);
+    transition: all 2000ms linear;
 }
 
 .lh-100 {
