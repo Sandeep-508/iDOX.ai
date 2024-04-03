@@ -457,6 +457,39 @@
 /* .back_img {
     background: rgb(0 7 12);
 } */
+.footer_link {
+    position: relative;
+}
+
+.footer_link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    transition: all 400ms linear;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #000000, #ffffff);
+    animation: 2s footer_animation infinite;
+}
+
+.footer_link:hover::after {
+    width: 100%;
+}
+
+.footer_link:hover {
+    animation: 3s footer_animation infinite;
+    background: linear-gradient(89.2deg, rgb(251, 230, 150) 10.4%, rgb(255, 0, 0) 37.1%, rgb(255, 216, 51) 64.3%, rgb(255, 255, 255) 90.5%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes footer_animation {
+    to {
+        background-position: 20vw;
+    }
+}
 
 .lh-100 {
     line-height: var(--lh-100);
