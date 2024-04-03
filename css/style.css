@@ -1696,6 +1696,10 @@ a {
     .menuicon:hover .third_line {
         width: 100%;
     }
+
+    .z-24 {
+        z-index: 24;
+    }
 }
 
 @media (max-width: 991.9px) and (min-width: 576px) {
