@@ -16,6 +16,16 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .slick-slider span img {
+            width: 100%;
+            filter: grayscale(100%);
+        }
+
+        .slick-slider span img:hover {
+            filter: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,9 +35,9 @@
         <!-- navbar -->
         <nav class="nav_clr">
             <div class="container-xxl container-fluid d-flex align-items-center justify-content-between py-3">
-                <div class="nav_title_pic">
+                <a class="nav_title_pic cursor" href="#">
                     <img src="./image/png/dox,ai logo 1.png" alt="title image">
-                </div>
+                </a>
                 <div class="menuicon">
                     <span></span>
                     <span></span>
@@ -89,7 +99,7 @@
 
             <div class="w_h_changes_dash_img mt_81px box_shadow position-relative">
 
-                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_1">
+                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_1 cursor">
                     <div class="svg_w_h d-flex align-items-center justify-content-center">
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -106,7 +116,7 @@
                     </div>
                 </div>
 
-                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_2">
+                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_2 cursor">
                     <div class="svg_w_h d-flex align-items-center justify-content-center">
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -120,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_3">
+                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_3 cursor">
                     <div class="svg_w_h d-flex align-items-center justify-content-center">
                         <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -134,7 +144,7 @@
                     </div>
                 </div>
 
-                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_4">
+                <div class="position-absolute d-flex align-items-center gap-2 py-3 px-3 back_drop pos_img_box_4 cursor">
                     <div class="svg_w_h d-flex align-items-center justify-content-center">
                         <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -427,7 +437,7 @@
                             Value
                         </p>
                         <div
-                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3">
+                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3 cursor">
                             <div class="svg_value_box">
                                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -439,7 +449,7 @@
                             <p class="m-0 fw-500 fm fs-18 lh-23 light_white_clr opacity-75 ps-3">High Accuracy Rate</p>
                         </div>
                         <div
-                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3">
+                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3 cursor">
                             <div class="svg_value_box">
                                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -451,7 +461,7 @@
                             <p class="m-0 fw-500 fm fs-18 lh-23 light_white_clr opacity-75 ps-3">Time Saving</p>
                         </div>
                         <div
-                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3">
+                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3 cursor">
                             <div class="svg_value_box">
                                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -463,7 +473,7 @@
                             <p class="m-0 fw-500 fm fs-18 lh-23 light_white_clr opacity-75 ps-3">Cost Saving</p>
                         </div>
                         <div
-                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3">
+                            class="value_box pt_13px ps-3 d-flex align-items-center box_effect mt-3 position-relative z-3 cursor">
                             <div class="svg_value_box">
                                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -488,7 +498,7 @@
 
         <!-- testinomials -->
 
-        <section class="pt_130px position-relative pt_50px">
+        <section class="pt_130px position-relative pt_50px z-3">
             <p class="fm fw-500 fs-45 lh-56 light_white_clr m-0 text-center m-0 pb-5 fs_lh_md_change_heaading">
                 Testinomials
             </p>
@@ -624,7 +634,10 @@
             <p class="fm fw-400 fs-16 lh-27 light_white_clr opacity-75 text-center">Only 2 minutes redacting a
                 10 page
                 document</p>
-            <div class="container_how_it_works">
+            <div class="container_how_it_works position-relative">
+                <div class="center_pos_ellipse">
+                    <img src="./image/png/center_ellipse_work_sec.png" alt="center ellipse">
+                </div>
                 <div class="row">
                     <div
                         class="col-xl-3 col-sm-6 position-relative d-flex align-items-xl-start align-items-center justify-content-center flex-column pt-4">
@@ -683,7 +696,7 @@
                             <div class="inner_box d-flex align-items-start flex-column gap_13px">
                                 <div
                                     class="d-flex flex-column align-items-start fm fw-500 fs-18 lh-26 light_white_clr opacity-75">
-                                    <label class="custom-checkbox d-flex align-items-center gap-2">
+                                    <label class="custom-checkbox cursor d-flex align-items-center gap-2 cursor">
                                         <input type="checkbox" class="master">
                                         <span class="checkbox-container"></span> Select all
                                     </label>
@@ -691,7 +704,7 @@
 
                                 <div
                                     class="d-flex flex-column align-items-start fm fw-500 fs-18 lh-26 light_white_clr opacity-75">
-                                    <label class="custom-checkbox d-flex align-items-center gap-2">
+                                    <label class="custom-checkbox cursor d-flex align-items-center gap-2">
                                         <input type="checkbox" class="slave">
 
                                         <span class="checkbox-container"></span>
@@ -708,7 +721,7 @@
                                 </div>
                                 <div
                                     class="d-flex flex-column align-items-start fm fw-500 fs-18 lh-26 light_white_clr opacity-75">
-                                    <label class="custom-checkbox d-flex align-items-center gap-2">
+                                    <label class="custom-checkbox cursor d-flex align-items-center gap-2">
                                         <input type="checkbox" class="slave">
 
                                         <span class="checkbox-container"></span>
@@ -734,7 +747,7 @@
                                 </div>
                                 <div
                                     class="d-flex flex-column align-items-start fm fw-500 fs-18 lh-26 light_white_clr opacity-75 text-nowrap">
-                                    <label class="custom-checkbox d-flex align-items-center gap-2">
+                                    <label class="custom-checkbox cursor d-flex align-items-center gap-2">
                                         <input type="checkbox" class="slave">
 
                                         <span class="checkbox-container"></span>
@@ -763,7 +776,7 @@
                                 </div>
                                 <div
                                     class="d-flex flex-column align-items-start fm fw-500 fs-18 lh-26 light_white_clr opacity-75">
-                                    <label class="custom-checkbox d-flex align-items-center gap-2">
+                                    <label class="custom-checkbox cursor d-flex align-items-center gap-2">
                                         <input type="checkbox" class="slave">
 
                                         <span class="checkbox-container"></span>
@@ -919,7 +932,7 @@
             <div class="container_hero">
                 <div class="row justify-content-between flex_col_rev">
                     <div
-                        class="col-lg-6 d-flex align-items-lg-start align-items-center flex-column justify-content-center pt-lg-0 pt-5">
+                        class="col-lg-6 d-flex align-items-lg-start align-items-center flex-column justify-content-center pt-lg-0 pt-5 position-relative z-3">
                         <p
                             class="fm fw-500 fs-45 lh-54 light_white_clr text-lg-start text-center m-0 fs_lh_md_change_heaading">
                             Accelerate Your
@@ -1341,11 +1354,11 @@
             infinite: true,
             slidesToShow: 7,
             slidesToScroll: 1,
-            // autoplay: true,
-            // autoplaySpeed: 0,
-            // speed: 2000,
-            // cssEase: 'linear',
-            // focusOnSelect: false,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 2000,
+            cssEase: 'linear',
+            focusOnSelect: false,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -1370,9 +1383,6 @@
                         slidesToScroll: 1
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
     </script>
