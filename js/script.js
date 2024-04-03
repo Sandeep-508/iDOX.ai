@@ -50,3 +50,13 @@ accord_items.forEach(item => {
         }
     });
 });
+
+
+let master = document.querySelector(".master");
+let slave = document.querySelectorAll(".slave");
+
+master.addEventListener("change", () => {
+    slave.forEach(other => {
+        other.checked = master.checked;
+    });
+});

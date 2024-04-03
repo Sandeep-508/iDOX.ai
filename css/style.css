@@ -582,12 +582,119 @@ a {
     background: var(--line-color);
 }
 
+/* how it works */
+
+.file-input {
+    display: none;
+}
+
+.custom-file-upload {
+    background-color: var(--line-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 129.49px;
+    min-height: 21.54px;
+    padding: 3.27px 15px 3.27px 15px;
+    border-radius: 44.99px;
+}
+
+.work_sec_box {
+    max-width: 231px;
+    background: rgba(3, 137, 255, 0.12);
+    height: 246.68px;
+    padding: 23.07px 20.52px 20.2px 21.12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_box {
+    max-width: 189.36px;
+    min-height: 185.41px;
+    padding: 19.43px 14.18px 19.43px 14.18px;
+    border-radius: 22px;
+    border: 1px;
+    background: rgba(0, 0, 0, 0.33);
+}
+
+.dotted_box {
+    border: 1px dotted rgba(3, 137, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 161px;
+    /* height: 114.54px; */
+    padding: 9px 7px 9px 7px;
+    border-radius: 5px;
+}
+
 .center_ellipse_pos_2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* custom checkbox */
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkbox-container {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--line-color);
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+}
+
+.custom-checkbox .checkbox-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: rotate(45deg);
+    width: 6px;
+    height: 2px;
+    background-color: var(--black-color);
+    opacity: 0;
+}
+
+.custom-checkbox .checkbox-container::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: rotate(45deg);
+    width: 2px;
+    height: 10px;
+    background-color: var(--black-color);
+    opacity: 0;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-container::after {
+    opacity: 1;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-container::before {
+    opacity: 1;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-container {
+    background-color: var(--line-color);
+}
+
+.gap_13px {
+    gap: 13px;
+}
+
+/* end */
 
 .center_ellipse_pos {
     position: absolute;
@@ -663,6 +770,21 @@ a {
     width: 109.3px;
     height: 2px;
     background: var(--line-color);
+}
+
+.april_blue_box {
+    display: inline-block;
+    padding: 3px 5px 2px 2px;
+    border-radius: 4px;
+    background: rgba(3, 137, 255, 1);
+}
+
+.black_text_box {
+    display: inline-block;
+    padding: 3px 5px 2px 2px;
+    border-radius: 4px;
+    background: var(--black-color);
+    color: var(--black-color);
 }
 
 .box_effect:hover {
@@ -834,6 +956,8 @@ a {
     margin: 0 -10px;
 }
 
+
+
 .flex_some_prop {
     display: flex;
     align-items: start;
@@ -973,6 +1097,11 @@ a {
     cursor: pointer;
 }
 
+.arrow_pos_2 {
+    position: absolute;
+    right: -7% !important;
+}
+
 @media (min-width: 1400px) {
     .box {
         max-width: 524px;
@@ -1019,6 +1148,17 @@ a {
     .d_min_none {
         display: none;
     }
+
+    .arrow_pos {
+        position: absolute;
+        top: 50%;
+        right: -13%;
+        transform: translate(-50%, -50%);
+    }
+
+    .arrow_pos_2 {
+        display: none;
+    }
 }
 
 @media (max-width: 1200px) and (min-width: 1024.9px) {
@@ -1044,6 +1184,17 @@ a {
 
     .d_min_none {
         display: none;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 576px) {
+    .arrow_pos_2 {
+        position: absolute;
+        right: 0;
+    }
+
+    .arrow_pos {
+        display: none !important;
     }
 }
 
@@ -1570,5 +1721,13 @@ a {
     .fs_lh_md_change_heaading {
         font-size: var(--fs-23);
         line-height: var(--lh-32);
+    }
+
+    .arrow_pos_2 {
+        display: none;
+    }
+
+    .arrow_pos {
+        display: none;
     }
 }
