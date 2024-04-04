@@ -1351,7 +1351,34 @@ a {
     transform: translate(-50%, -50%);
 }
 
+.ellipse_image_pos {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 537.69px;
+    height: 200.42px;
+    /* opacity: 0.3px; */
+}
 
+.hover_effect:hover .ellipse_image_pos {
+    opacity: 1;
+}
+
+.hover_effect:hover .select_btn {
+    background: var(--line-color);
+    color: var(--text-col-clr);
+    -webkit-box-shadow: 0px 4px 32px 0px rgba(39, 70, 237, 0.5);
+    box-shadow: 0px 4px 32px 0px rgba(39, 70, 237, 0.5);
+    border: 1px solid transparent;
+}
+
+.hover_effect:hover .dollar_text {
+    color: var(--line-color);
+}
 
 @media (min-width: 1400px) {
     .box {
@@ -1522,35 +1549,6 @@ a {
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
-    }
-
-    .ellipse_image_pos {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        width: 537.69px;
-        height: 200.42px;
-        /* opacity: 0.3px; */
-    }
-
-    .hover_effect:hover .ellipse_image_pos {
-        opacity: 1;
-    }
-
-    .hover_effect:hover .select_btn {
-        background: var(--line-color);
-        color: var(--text-col-clr);
-        -webkit-box-shadow: 0px 4px 32px 0px rgba(39, 70, 237, 0.5);
-        box-shadow: 0px 4px 32px 0px rgba(39, 70, 237, 0.5);
-        border: 1px solid transparent;
-    }
-
-    .hover_effect:hover .dollar_text {
-        color: var(--line-color);
     }
 
     .input_box {
@@ -1732,9 +1730,9 @@ a {
         position: relative;
     }
 
-    .ellipse_image_pos {
+    /* .ellipse_image_pos {
         display: none;
-    }
+    } */
 
     .h_236px {
         height: 236px;
