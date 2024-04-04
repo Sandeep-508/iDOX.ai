@@ -86,3 +86,26 @@ master.addEventListener("change", () => {
         other.checked = master.checked;
     });
 });
+
+// let preloader = document.querySelector(".preloader");
+// preloader.classList.remove("vanish");
+
+// setTimeout(() => {
+//     preloader.classList.add("vanish");
+// }, 3000);
+
+let preloader = document.querySelector(".preloader");
+
+function toggleOverflow() {
+    if (preloader.classList.contains("vanish")) {
+        body.style.overflow = "auto";
+    } else {
+        body.style.overflow = "hidden";
+    }
+}
+
+body.style.overflow = "hidden";
+setTimeout(() => {
+    preloader.classList.add("vanish");
+    preloader.addEventListener("transitionend", toggleOverflow);
+}, 3000);
