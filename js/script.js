@@ -87,13 +87,6 @@ master.addEventListener("change", () => {
     });
 });
 
-// let preloader = document.querySelector(".preloader");
-// preloader.classList.remove("vanish");
-
-// setTimeout(() => {
-//     preloader.classList.add("vanish");
-// }, 3000);
-
 let preloader = document.querySelector(".preloader");
 
 function toggleOverflow() {
