@@ -855,6 +855,10 @@ a {
     transition: all 400ms linear;
 }
 
+.dotted_box {
+    margin-top: 10px;
+}
+
 .nav_items::after {
     bottom: -5px;
     right: 0;
