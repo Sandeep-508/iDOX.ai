@@ -2136,3 +2136,13 @@ a {
         display: none;
     }
 }
+
+@media (min-width: 1441px) {
+    .container_xxxl {
+        max-width: 1320px;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
