@@ -1328,6 +1328,22 @@ a {
 .arrow_pos_2 {
     position: absolute;
     right: -7% !important;
+
+}
+
+.try_now {
+    border: 1px solid transparent;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.try_now:hover {
+    border: 1px solid white;
+    background: transparent;
+    position: relative;
+    /* z-index: 20; */
 }
 
 .add_sign {
