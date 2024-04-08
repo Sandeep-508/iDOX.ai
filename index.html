@@ -71,7 +71,7 @@
         <p class="fm_imbue fw-700 fs-80 lh-86 text-white m-0 pt-4 opacity-75">iDOX.ai</p>
     </section>
 
-    <header class="header_pic min-vh-100">
+    <header class="header_pic min-lg-vh-100">
 
         <!-- navbar -->
         <nav class="nav_clr">
@@ -220,11 +220,11 @@
 
     </header>
 
-    <main class="primary_color -mt_20px overflow-hidden">
+    <main class="primary_color -mt_20px overflow-hidden pt-4">
 
         <!-- slider -->
 
-        <section class="pt-sm-5 pt-0 position-relative">
+        <section class="pt-0 position-relative">
             <p class="fm fw-300 fs-20 lh-24 text-white opacity-75 m-0 text-center pb-4">In collaboration with</p>
             <div class="slick-slider back_img">
                 <span>
@@ -1407,7 +1407,7 @@
             prevArrow: false,
             nextArrow: false,
             infinite: true,
-            slidesToShow: 7,
+            slidesToShow: 8,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 0,
@@ -1417,18 +1417,30 @@
             variableWidth: true,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1920,
                     settings: {
-                        slidesToShow: 5,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: false,
+                        slidesToShow: 8,
+                        slidesToScroll: 1
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 1440,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 8,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 5,
                         slidesToScroll: 1
                     }
                 },
@@ -1438,7 +1450,7 @@
                         slidesToShow: 3,
                         slidesToScroll: 1
                     }
-                }
+                },
             ]
         });
     </script>

@@ -487,6 +487,9 @@ a {
     display: none;
 }
 
+.cursor {
+    cursor: pointer;
+}
 
 .footer_link {
     position: relative;
@@ -821,10 +824,6 @@ a {
     -webkit-transform: translate(0, 50%);
     -ms-transform: translate(0, 50%);
     transform: translate(0, 50%);
-}
-
-.cursor {
-    cursor: pointer;
 }
 
 
@@ -1456,6 +1455,13 @@ a {
 
     .arrow_pos_2 {
         display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .px_12px {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
     }
 }
 
@@ -2144,5 +2150,13 @@ a {
         padding-right: 12px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (min-width: 1920px) {}
+
+@media (max-width: 1920px) {
+    .min-lg-vh-100 {
+        min-height: 100vh;
     }
 }
