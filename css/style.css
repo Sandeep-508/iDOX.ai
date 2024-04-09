@@ -2042,10 +2042,10 @@ a {
         --bs-gutter-x: 0;
     }
 
-
+/* 
     .container_hero {
         padding: 0;
-    }
+    } */
 
     .content_box {
         max-width: 1140px;
@@ -2153,10 +2153,9 @@ a {
     }
 }
 
-@media (min-width: 1920px) {}
 
 @media (max-width: 1920px) {
-    .min-lg-vh-100 {
+    .min-vh-100-media {
         min-height: 100vh;
     }
 }
