@@ -2042,10 +2042,11 @@ a {
         --bs-gutter-x: 0;
     }
 
-/* 
+
     .container_hero {
-        padding: 0;
-    } */
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 
     .content_box {
         max-width: 1140px;
