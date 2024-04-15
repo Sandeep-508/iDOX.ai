@@ -1590,7 +1590,7 @@ a {
         width: 1px;
         left: 75%;
         height: 100%;
-        background: rgba(251, 253, 255, 0.6);
+        background: #273138;
     }
 
     .int_hor_line {
@@ -1598,7 +1598,7 @@ a {
         width: 1px;
         left: 25%;
         height: 100%;
-        background: rgba(251, 253, 255, 0.6);
+        background: #273138;
     }
 
     .int_hor_line_2 {
@@ -1606,7 +1606,7 @@ a {
         width: 1px;
         left: 50%;
         height: 100%;
-        background: rgba(251, 253, 255, 0.6);
+        background: #273138;
     }
 
     .int_ver_line {
@@ -1614,7 +1614,7 @@ a {
         width: 100%;
         top: 50%;
         height: 1px;
-        background: rgba(251, 253, 255, 0.6);
+        background: #273138;
     }
 
     .slick-list {
@@ -2153,7 +2153,6 @@ a {
         margin-right: auto;
     }
 }
-
 
 @media (max-width: 1920px) {
     .min-vh-100-media {
